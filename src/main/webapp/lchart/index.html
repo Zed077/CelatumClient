@@ -11,12 +11,17 @@
 <body style="padding: 0; margin: 0;">
 	<!-- Tab links -->
 	<div class="tab">
+		<button class="tablinks" onclick="openTab(event, 'Trading');getSizing()">Trading</button>
 		<button class="tablinks" onclick="openTab(event, 'Signals')">Signals</button>
 		<button class="tablinks" onclick="openTab(event, 'Backtest')">Backtest</button>
 		<button class="tablinks" onclick="openTab(event, 'Benchmark')">Benchmark</button>
 	</div>
 
 	<!-- Tab content -->
+	<div id="Trading" class="tabcontent">
+		<table id="sizingDataContainer"></div>
+	</div>
+
 	<div id="Signals" class="tabcontent">
 		<h3>London</h3>
 		<p>London is the capital city of England.</p>
@@ -59,6 +64,8 @@
 			evt.currentTarget.className += " active";
 		}
 	</script>
+
+	<script src="sizing.js"></script>
 </body>
 
 </html>

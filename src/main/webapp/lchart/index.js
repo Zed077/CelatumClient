@@ -29,7 +29,7 @@ var candleSeries = chart.addCandlestickSeries({
   wickUpColor: "#838ca1"
 });
 
-fetch("http://localhost:12689/Celatum/HelloWorld")
+fetch("http://localhost:8080/Celatum/HelloWorld?method=history")
   .then(function (response) {
     return response.json().then((data) => {
       candleSeries.setData(data.map(candle => {
