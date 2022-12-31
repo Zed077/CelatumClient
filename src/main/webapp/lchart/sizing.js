@@ -6,14 +6,14 @@ function getSizing() {
       return response.json();
     })
     .then(function (data) {
-      appendSizingData(data);
+      appendData(data);
     })
     .catch(function (err) {
       console.log('error: ' + err);
     });
 }
 
-function appendSizingData(data) {
+function appendData(data) {
   /*
   for (var i = 0; i < data.length; i++) {
     var div = document.createElement("div");

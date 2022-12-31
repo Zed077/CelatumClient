@@ -3,12 +3,12 @@ function getSizing() {
     fetch("http://localhost:8080/Celatum/HelloWorld?method=sizing").then(function(response) {
         return response.json();
     }).then(function(data) {
-        appendSizingData(data);
+        appendData(data);
     }).catch(function(err) {
         console.log("error: " + err);
     });
 }
-function appendSizingData(data) {
+function appendData(data) {
     /*
   for (var i = 0; i < data.length; i++) {
     var div = document.createElement("div");

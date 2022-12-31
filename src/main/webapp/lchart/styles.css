@@ -55,3 +55,8 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+#description, #statistics {
+  margin-left: 10;
+  font-size: small;
+}

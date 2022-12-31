@@ -49,4 +49,9 @@ tr:nth-child(2n) {
   background-color: #ddd;
 }
 
+#description, #statistics {
+  margin-left: 10px;
+  font-size: small;
+}
+
 /*# sourceMappingURL=index.1303bb05.css.map */
